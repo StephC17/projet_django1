@@ -1,0 +1,24 @@
+#creation du projet
+django-admin startproject <projet> .
+
+#creation de la bd
+python manage.py migrate      
+
+#lancement du serveur
+python manage.py runserver
+
+#creation d'une application
+python manage.py startapp <app>
+
+#ajouter app dans <projet>.settings.py
+
+#ajouter des modeles dans <app>.models.py
+
+#creation des tables correspondant au modele :
+python manage.py makemigrations <app>
+python manage.py migrate <app>
+
+#pour pouvoir administrer un modele (objet) <truc> :
+admin.site.register(<truc>)
+
+
